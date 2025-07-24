@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="asset/EchoMimicV3_logo.png.jpg"  height=60>
+</p>
+
 <h1 align='center'>EchoMimicV3: 1.3B Parameters are All You Need for Unified Multi-Modal and Multi-Task Human Animation</h1>
 
 <div align='center'>
