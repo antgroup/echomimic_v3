@@ -281,6 +281,6 @@ If you find our work useful for your research, please consider citing the paper 
   archivePrefix={arXiv}
 }
 ```
-<!-- 
+
 ## &#x1F31F; Star History
 [![Star History Chart](https://api.star-history.com/svg?repos=antgroup/echomimic_v3&type=Date)](https://www.star-history.com/#antgroup/echomimic_v3&Date)
