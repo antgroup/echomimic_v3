@@ -52,6 +52,9 @@ Terminal Technology Department, Alipay, Ant Group.
 * [2025.07.08] 🔥 Our [paper](https://arxiv.org/abs/2507.03905) is in public on arxiv.
 
 ## &#x1F305; Gallery
+<p align="center">
+  <img src="asset/echomimicv3.jpg"  height=700>
+</p>
 <table class="center">
 <tr>
     <td width=100% style="border: none">
