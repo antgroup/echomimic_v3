@@ -47,100 +47,17 @@ Terminal Technology Department, Alipay, Ant Group.
 * [2024.11.21] 🔥 We release our [EchoMimicV2](https://github.com/antgroup/echomimic_v2) codes and models. -->
 * [2025.07.08] 🔥 Our [paper](https://arxiv.org/abs/2507.03905) is in public on arxiv.
 
-<!-- ## &#x1F305; Gallery
-### Introduction
-<table class="center">
-<tr>
-    <td width=50% style="border: none">
-        <video controls loop src="https://github.com/user-attachments/assets/f544dfc0-7d1a-4c2c-83c0-608f28ffda25" muted="false"></video>
-    </td>
-    <td width=50% style="border: none">
-        <video controls loop src="https://github.com/user-attachments/assets/7f626b65-725c-4158-a96b-062539874c63" muted="false"></video>
-    </td>
-</tr>
-</table>
-
-### English Driven Audio
+## &#x1F305; Gallery
 <table class="center">
 <tr>
     <td width=100% style="border: none">
-        <video controls loop src="https://github.com/user-attachments/assets/3d5ac52c-62e4-41bc-8b27-96f005bbd781" muted="false"></video>
+        <video controls loop src="https://github.com/user-attachments/assets/0c57922f-d4f8-4889-a247-36be92df90c5" muted="false"></video>
     </td>
 </tr>
 </table>
-<table class="center">
-<tr>
-    <td width=30% style="border: none">
-        <video controls loop src="https://github.com/user-attachments/assets/e8dd6919-665e-4343-931f-54c93dc49a7d" muted="false"></video>
-    </td>
-    <td width=30% style="border: none">
-        <video controls loop src="https://github.com/user-attachments/assets/2a377391-a0d3-4a9d-8dde-cc59006e7e5b" muted="false"></video>
-    </td>
-    <td width=30% style="border: none">
-        <video controls loop src="https://github.com/user-attachments/assets/462bf3bb-0af2-43e2-a2dc-559e79953f3c" muted="false"></video>
-    </td>
-</tr>
-<tr>
-    <td width=30% style="border: none">
-        <video controls loop src="https://github.com/user-attachments/assets/0e988e7f-6346-4b54-9061-9cfc7a80e9c8" muted="false"></video>
-    </td>
-    <td width=30% style="border: none">
-        <video controls loop src="https://github.com/user-attachments/assets/56f739bd-afbf-4ed3-ab15-73a811c1bc46" muted="false"></video>
-    </td>
-    <td width=30% style="border: none">
-        <video controls loop src="https://github.com/user-attachments/assets/1b2f7827-111d-4fc0-a773-e1731bba285d" muted="false"></video>
-    </td>
-</tr>
-<tr>
-    <td width=30% style="border: none">
-        <video controls loop src="https://github.com/user-attachments/assets/a76b6cc8-89b9-4f7e-b1ce-c85a657b6dc7" muted="false"></video>
-    </td>
-    <td width=30% style="border: none">
-        <video controls loop src="https://github.com/user-attachments/assets/bf03b407-5033-4a30-aa59-b8680a515181" muted="false"></video>
-    </td>
-    <td width=30% style="border: none">
-        <video controls loop src="https://github.com/user-attachments/assets/f98b3985-572c-499f-ae1a-1b9befe3086f" muted="false"></video>
-    </td>
-</tr>
-</table>
+For more demo videos, please refer to the project page.
 
-### Chinese Driven Audio
-<table class="center">
-<tr>
-    <td width=30% style="border: none">
-        <video controls loop src="https://github.com/user-attachments/assets/a940a332-2fd1-48e7-b3c4-f88f63fd1c9d" muted="false"></video>
-    </td>
-    <td width=30% style="border: none">
-        <video controls loop src="https://github.com/user-attachments/assets/8f185829-c67f-45f4-846c-fcbe012c3acf" muted="false"></video>
-    </td>
-    <td width=30% style="border: none">
-        <video controls loop src="https://github.com/user-attachments/assets/a49ab9be-f17b-41c5-96dd-20dc8d759b45" muted="false"></video>
-    </td>
-</tr>
-<tr>
-    <td width=30% style="border: none">
-        <video controls loop src="https://github.com/user-attachments/assets/1136ec68-a13c-4ee7-ab31-5621530bf9df" muted="false"></video>
-    </td>
-    <td width=30% style="border: none">
-        <video controls loop src="https://github.com/user-attachments/assets/fc16d512-8806-4662-ae07-8fcf45c75a83" muted="false"></video>
-    </td>
-    <td width=30% style="border: none">
-        <video controls loop src="https://github.com/user-attachments/assets/f8559cd1-f555-4781-9251-dfcef10b5b01" muted="false"></video>
-    </td>
-</tr>
-<tr>
-    <td width=30% style="border: none">
-        <video controls loop src="https://github.com/user-attachments/assets/c7473e3a-ab51-4ad5-be96-6c4691fc0c6e" muted="false"></video>
-    </td>
-    <td width=30% style="border: none">
-        <video controls loop src="https://github.com/user-attachments/assets/ca69eac0-5126-41ee-8cac-c9722004d771" muted="false"></video>
-    </td>
-    <td width=30% style="border: none">
-        <video controls loop src="https://github.com/user-attachments/assets/e66f1712-b66d-46b5-8bbd-811fbcfea4fd" muted="false"></video>
-    </td>
-</tr>
-</table>
-
+<!-- 
 ## ⚒️ Automatic Installation
 ### Download the Codes
 
