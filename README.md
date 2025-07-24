@@ -273,7 +273,7 @@ If we missed any open-source projects or related articles, we would like to comp
 If you find our work useful for your research, please consider citing the paper :
 
 ```
-@misc{meng2024echomimicv3,
+@misc{meng2025echomimicv3,
   title={EchoMimicV3: 1.3B Parameters are All You Need for Unified Multi-Modal and Multi-Task Human Animation},
   author={Rang Meng, Yan Wang, Weipeng Wu, Ruobing Zheng, Yuming Li, Chenguang Ma},
   year={2025},
