@@ -47,7 +47,7 @@ Terminal Technology Department, Alipay, Ant Group.
 * [2024.11.21] 🔥 We release our [EchoMimicV2](https://github.com/antgroup/echomimic_v2) codes and models. -->
 * [2025.07.08] 🔥 Our [paper](https://arxiv.org/abs/2507.03905) is in public on arxiv.
 
-## &#x1F305; Gallery
+<!-- ## &#x1F305; Gallery
 ### Introduction
 <table class="center">
 <tr>
@@ -266,7 +266,7 @@ We would like to thank the contributors to the [MimicMotion](https://github.com/
 
 We are also grateful to [CyberHost](https://cyberhost.github.io/) and [Vlogger](https://enriccorona.github.io/vlogger/) for their outstanding work in the area of audio-driven human animation.
 
-If we missed any open-source projects or related articles, we would like to complement the acknowledgement of this specific work immediately.
+If we missed any open-source projects or related articles, we would like to complement the acknowledgement of this specific work immediately. -->
 
 ## &#x1F4D2; Citation
 
