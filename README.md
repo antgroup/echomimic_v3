@@ -170,14 +170,13 @@ Make sure to check out the [discussions](https://github.com/antgroup/echomimic_v
 -->
 ## 📝 TODO List
 
-|  Status  | Milestone                                                                |
 |:--------:|:-------------------------------------------------------------------------|
-|    [ ]    | The inference code of EchoMimicV3 meet everyone on GitHub   | 
-|    [ ]    | Preview version Pretrained models trained on English and Chinese on HuggingFace | 
-|    [ ]    | Preview version Pretrained models trained on English and Mandarin Chinese on ModelScope   | 
-|    [ ]   | 720P Pretrained models trained on English and Chinese on HuggingFace | 
-|    [ ]    | 720P Pretrained models trained on English and Mandarin Chinese on ModelScope   | 
-|    [ ]    | The training code of EchoMimicV2 meet everyone on GitHub   | 
+|    🚀    | The inference code of EchoMimicV3 meet everyone on GitHub   | 
+|    🚀    | Preview version Pretrained models trained on English and Chinese on HuggingFace | 
+|    🚀    | Preview version Pretrained models trained on English and Mandarin Chinese on ModelScope   | 
+|    🚀    | 720P Pretrained models trained on English and Chinese on HuggingFace | 
+|    🚀    | 720P Pretrained models trained on English and Mandarin Chinese on ModelScope   | 
+|    🚀    | The training code of EchoMimicV2 meet everyone on GitHub   | 
 
 <!-- 
 ## ⚖️ Disclaimer
