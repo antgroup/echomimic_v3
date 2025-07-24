@@ -167,20 +167,19 @@ Process dataset:
 python ./EMTD_dataset/preprocess.py
 ```
 Make sure to check out the [discussions](https://github.com/antgroup/echomimic_v3/discussions) to learn how to start the inference.
+-->
+## 📝 TODO List
 
-## 📝 Release Plans
+|  Status  | Milestone                                                                |
+|:--------:|:-------------------------------------------------------------------------|
+|    🚀    | The inference code of EchoMimicV3 meet everyone on GitHub   | 
+|    🚀    | Preview version Pretrained models trained on English and Chinese on HuggingFace | 
+|    🚀    | Preview version Pretrained models trained on English and Mandarin Chinese on ModelScope   | 
+|    🚀    | 720P Pretrained models trained on English and Chinese on HuggingFace | 
+|    🚀    | 720P Pretrained models trained on English and Mandarin Chinese on ModelScope   | 
+|    🚀    | The training code of EchoMimicV2 meet everyone on GitHub   | 
 
-|  Status  | Milestone                                                                | ETA |
-|:--------:|:-------------------------------------------------------------------------|:--:|
-|    ✅    | The inference source code of EchoMimicV2 meet everyone on GitHub   | 21st Nov, 2024 |
-|    ✅    | Pretrained models trained on English and Mandarin Chinese on HuggingFace | 21st Nov, 2024 |
-|    ✅    | Pretrained models trained on English and Mandarin Chinese on ModelScope   | 21st Nov, 2024 |
-|    ✅    | EMTD dataset list and processing scripts                | 21st Nov, 2024 |
-|    ✅    | Jupyter demo with pose and reference image alignmnet                | 16st Dec, 2024 |
-|    ✅    | Accelerated models                                        | 3st Jan, 2025 |
-|    🚀    | Online Demo on ModelScope to be released            | TBD |
-|    🚀    | Online Demo on HuggingFace to be released         | TBD |
-
+<!-- 
 ## ⚖️ Disclaimer
 This project is intended for academic research, and we explicitly disclaim any responsibility for user-generated content. Users are solely liable for their actions while using the generative model. The project contributors have no legal affiliation with, nor accountability for, users' behaviors. It is imperative to use the generative model responsibly, adhering to both ethical and legal standards.
 
