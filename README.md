@@ -5,13 +5,17 @@
 <h1 align='center'>EchoMimicV3: 1.3B Parameters are All You Need for Unified Multi-Modal and Multi-Task Human Animation</h1>
 
 <div align='center'>
-    <a href='https://github.com/mengrang' target='_blank'>Rang Meng</a></sup>&emsp;
+    <a href='https://github.com/mengrang' target='_blank'>Rang Meng</a><sup>1</sup>&emsp;
     <a href='https://github.com/' target='_blank'>Yan Wang</a>&emsp;
     <a href='https://github.com/' target='_blank'>Weipeng Wu</a>&emsp;
     <a href='https://github.com/' target='_blank'>Ruobing Zheng</a>&emsp;
-    <a href='https://lymhust.github.io/' target='_blank'>Yuming Li</a></sup>&emsp;
-    <a href='https://github.com/' target='_blank'>Chenguang Ma</a></sup>
+    <a href='https://lymhust.github.io/' target='_blank'>Yuming Li</a><sup>1</sup>&emsp;
+    <a href='https://github.com/' target='_blank'>Chenguang Ma</a><sup>1</sup>
 </div>
+<p align='center'>
+    <sup>1</sup>Core contributor&emsp;
+    <sup>2</sup>Corresponding author
+</p>
 
 <div align='center'>
 Terminal Technology Department, Alipay, Ant Group.
@@ -171,7 +175,7 @@ Make sure to check out the [discussions](https://github.com/antgroup/echomimic_v
 ## 📝 TODO List
 | Status | Milestone                                                                |     
 |:--------:|:-------------------------------------------------------------------------|
-|    🚀    | The inference code of EchoMimicV3 meet everyone on GitHub   | 
+|    2025.08.08    | The inference code of EchoMimicV3 meet everyone on GitHub   | 
 |    🚀    | Preview version Pretrained models trained on English and Chinese on HuggingFace | 
 |    🚀    | Preview version Pretrained models trained on English and Chinese on ModelScope   | 
 |    🚀    | 720P Pretrained models trained on English and Chinese on HuggingFace | 
