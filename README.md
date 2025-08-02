@@ -12,13 +12,13 @@
     <a href='https://lymhust.github.io/' target='_blank'>Yuming Li</a><sup>2</sup>&emsp;
     <a href='https://github.com/' target='_blank'>Chenguang Ma</a><sup>2</sup>
 </div>
+<div align='center'>
+Terminal Technology Department, Alipay, Ant Group.
+</div>
 <p align='center'>
     <sup>1</sup>Core contributor&emsp;
     <sup>2</sup>Corresponding author
 </p>
-<div align='center'>
-Terminal Technology Department, Alipay, Ant Group.
-</div>
 <br>
 <div align='center'>
     <a href='https://antgroup.github.io/ai/echomimic_v3/'><img src='https://img.shields.io/badge/Project-Page-blue'></a>
