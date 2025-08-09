@@ -1,5 +1,5 @@
 import torch
-import torch.cuda.amp as amp
+import torch.amp as amp
 
 from ..dist import (get_sequence_parallel_rank,
                     get_sequence_parallel_world_size, get_sp_group,
@@ -19,7 +19,7 @@ def pad_freqs(original_tensor, target_len):
     padded_tensor = torch.cat([original_tensor, padding_tensor], dim=0)
     return padded_tensor
 
-@amp.autocast(enabled=False)
+@amp.autocast('cuda', enabled=False)
 def rope_apply(x, grid_sizes, freqs):
     """
     x:          [B, L, N, C].

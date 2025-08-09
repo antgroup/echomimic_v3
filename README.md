@@ -110,7 +110,7 @@ pip install -r requirements.txt
 ``` 
 ### 🔑 Quick Inference
 ```
-python infer.py
+python app.py
 ```
 > Tips
 > - Audio CFG: Audio CFG works optimally between 2~3. Increase the audio CFG value for better lip synchronization, while decreasing the audio CFG value can improve the visual quality.

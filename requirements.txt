@@ -29,3 +29,4 @@ moviepy==2.2.1
 tensorflow==2.15.0
 retina-face==0.0.17
 librosa
+gradio
