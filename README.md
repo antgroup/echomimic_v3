@@ -48,6 +48,11 @@ Terminal Technology Department, Alipay, Ant Group.
 * EchoMimicV3: 1.3B Parameters are All You Need for Unified Multi-Modal and Multi-Task Human Animation. [GitHub](https://github.com/antgroup/echomimic_v3)
 
 ## &#x1F4E3; Updates
+* [2026.01.22] 🔥 We update our EchoMimicV3-2512, model on ModelScope. Code on GitHub.
+  - 🚀 8-step High-quality Generation.
+  - 🧩 No Face Mask required.
+  - 💾 25G VRAM Requirement for BF16.
+  - ✅ Supports up to 768×768 Resolution.
 * [2025.11.09] 🔥 EchoMimicV3 is accepted by AAAI 2026.
 * [2025.08.21] 🔥 EchoMimicV3 gradio demo on [modelscope](https://modelscope.cn/studios/BadToBest/EchoMimicV3) is ready.
 * [2025.08.12] 🔥🚀 **12G VRAM is All YOU NEED to Generate Video**. Please use this [GradioUI](https://github.com/antgroup/echomimic_v3/blob/main/app_mm.py). Check the [tutorial](https://www.bilibili.com/video/BV1W8tdzEEVN) from @[gluttony-10](https://github.com/gluttony-10). Thanks for the contribution.
