@@ -42,6 +42,11 @@
 </p>
 
 ## &#x1F4E3; 更新日志
+[2026.01.22] 🔥 我们更新了 EchoMimicV3-2512 模型和代码
+- 🚀 8 步即可生成高质量结果，远超 V3-preview 表现
+- 🧩 无需人脸分割掩码，流程更简洁，鲁棒性更强
+- 💾 BF16 精度下需 25G 显存
+- ✅ 支持最大 768×768 分辨率生成
 * [2025.08.12] 🔥 **仅需12G显存生成视频**, 量化版本[GradioUI](https://github.com/antgroup/echomimic_v3/blob/main/app_mm.py)发布。 查看 [教程](https://www.bilibili.com/video/BV1W8tdzEEVN)。感谢@[gluttony-10](https://github.com/gluttony-10)贡献。
 * [2025.08.12] 🔥 EchoMimicV3支持16G显存，使用[ComfyUI](https://github.com/smthemex/ComfyUI_EchoMimic). 感谢 @[smthemex](https://github.com/smthemex)的贡献。
 * [2025.08.10] 🔥 [GradioUI](https://github.com/antgroup/echomimic_v3/blob/main/app.py) 已发布，感谢 @[gluttony-10](https://github.com/gluttony-10) 的贡献。
