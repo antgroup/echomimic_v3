@@ -48,7 +48,7 @@ Terminal Technology Department, Alipay, Ant Group.
 * EchoMimicV3: 1.3B Parameters are All You Need for Unified Multi-Modal and Multi-Task Human Animation. [GitHub](https://github.com/antgroup/echomimic_v3)
 
 ## &#x1F4E3; Updates
-* [2026.01.22] 🔥 We update our EchoMimicV3-2512, model on ModelScope. Code on GitHub.
+* [2026.01.22] 🔥 We update our EchoMimicV3-2512. Model on ModelScope and Code on GitHub.
   - 🚀 8-step High-quality Generation.
   - 🧩 No Face Mask required.
   - 💾 25G VRAM Requirement for BF16.
