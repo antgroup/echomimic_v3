@@ -1,5 +1,36 @@
 python infer_2512.py \
-    --image_path ./input.jpg \
-    --audio_path ./audio.wav \
-    --prompt "A person is speaking. " \
-    --save_path ./outputs
+    --image_path "./input.jpg" \
+    --audio_path "./audio.wav" \
+    --prompt "A person speaking" \
+    --num_inference_steps 8 \
+    --config_path "config/wan2.1/wan_civitai.yaml" \
+    --model_name "Wan2.1-Fun-V1.1-1.3B-InP" \
+    --ckpt_idx 50000 \
+    --transformer_path "" \
+    --vae_path "" \
+    --lora_path "" \
+    --save_path "outputs" \
+    --wav2vec_model_dir "chinese-wav2vec2-base" \
+    --sampler_name "Flow_Unipc" \
+    --video_length 81 \
+    --guidance_scale 6.0 \
+    --audio_guidance_scale 3.0 \
+    --audio_scale 1.0 \
+    --neg_scale 1.0 \
+    --neg_steps 0 \
+    --seed 43 \
+    --enable_teacache \
+    --teacache_threshold 0.1 \
+    --num_skip_start_steps 5 \
+    --teacache_offload False \
+    --enable_riflex False \
+    --riflex_k 6 \
+    --ulysses_degree 1 \
+    --ring_degree 1 \
+    --fsdp_dit False \
+    --weight_dtype "bfloat16" \
+    --sample_size 768 768 \
+    --fps 25 \
+    --add_prompt "" \
+    --negative_prompt "" \
+    --shift 5.0
