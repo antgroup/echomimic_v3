@@ -164,7 +164,7 @@ python app_mm.py
 **images, audios, masks and prompts are provided in `datasets/echomimicv3_demos`**
 
 #### Tips
-- Audio CFG: Audio CFG `audio_guidance_scale` works optimally between 2~3. Increase the audio CFG value for better lip synchronization, while decreasing the audio CFG value can improve the visual quality.
+- Audio CFG: Audio CFG `audio_guidance_scale` works optimally between 1.8~2. Increase the audio CFG value for better lip synchronization, while decreasing the audio CFG value can improve the visual quality.
 - Text CFG: Text CFG `guidance_scale` works optimally between 3~6. Increase the text CFG value for better prompt following, while decreasing the text CFG value can improve the visual quality.
 - TeaCache: The optimal range for `teacache_threshold` is between 0~0.1.
 - Sampling steps: 5 steps for talking head, 15~25 steps for talking body. 
