@@ -138,6 +138,7 @@ pip install -r requirements.txt
 ├── chinese-wav2vec2-base
 └── transformer
     └── diffusion_pytorch_model.safetensors
+```
 
 -- The **weights** is of EchoMimicV3-preview organized as follows.
 
