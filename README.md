@@ -171,12 +171,6 @@ python app_mm.py
 - ​Long video generation: If you want to generate a video longer than 138 frames, you can use Long Video CFG.
 - Try setting `partial_video_length` to 81, 65 or smaller to reduce VRAM usage.
 
-
-## &#x1F680; EchoMimic Series
-* EchoMimicV3: 1.3B Parameters are All You Need for Unified Multi-Modal and Multi-Task Human Animation. [GitHub](https://github.com/antgroup/echomimic_v3)
-* EchoMimicV2: Towards Striking, Simplified, and Semi-Body Human Animation. [GitHub](https://github.com/antgroup/echomimic_v2)
-* EchoMimicV1: Lifelike Audio-Driven Portrait Animations through Editable Landmark Conditioning. [GitHub](https://github.com/antgroup/echomimic)
-
 ## &#x1F4D2; Citation
 
 If you find our work useful for your research, please consider citing the paper :
