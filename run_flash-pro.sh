@@ -1,4 +1,4 @@
-python infer_2512.py \
+python infer_flash_pro.py \
     --image_path "./input.jpg" \
     --audio_path "./audio.wav" \
     --prompt "A person speaking" \
