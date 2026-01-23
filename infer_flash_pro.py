@@ -14,7 +14,7 @@ from src.dist import set_multi_gpus_devices, shard_model
 from src.wan_vae import AutoencoderKLWan
 from src.wan_image_encoder import  CLIPModel
 from src.wan_text_encoder import  WanT5EncoderModel
-from src.wan_transformer3d_audio_2512 import WanTransformerAudioMask3DModel
+from src.wan_transformer3d_audio_2512 import WanTransformerAudioMask3DModel as WanTransformer
 from src.pipeline_wan_fun_inpaint_audio_2512 import WanFunInpaintAudioPipeline
 
 from src.utils import (filter_kwargs, get_image_to_video_latent, get_image_to_video_latent2,
@@ -311,9 +311,6 @@ def main():
 
     generator = torch.Generator(device=device).manual_seed(seed)
 
-    if lora_path is not None:
-        pipeline = merge_lora(pipeline, lora_path, lora_weight)
-
     pipeline.to(device=device)
 
     # Create output directory
@@ -345,7 +342,7 @@ def main():
         video_length_actual = int((video_length_actual - 1) // vae.config.temporal_compression_ratio * vae.config.temporal_compression_ratio) + 1 if video_length_actual != 1 else 1
 
         # Get audio features
-        mel_input, sr = librosa.load(audio, sr=16000)
+        mel_input, sr = librosa.load(audio_path, sr=16000)
         mel_input = loudness_norm(mel_input, sr)
         mel_input = mel_input[:int(video_length_actual / 25 * sr)]
         
@@ -413,7 +410,7 @@ def main():
 
         # Clean up temporary file
         os.remove(tmp_video_path)
-        print(f"✅ Saved output to: {output_video_path}")
+        print(f"Saved output to: {output_video_path}")
 
 if __name__ == "__main__":
     main()
