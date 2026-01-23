@@ -124,47 +124,51 @@ pip install -r requirements.txt
 | Models        |                       Download Link                                           |    Notes                      |
 | --------------|-------------------------------------------------------------------------------|-------------------------------|
 | Wan2.1-Fun-V1.1-1.3B-InP  |      🤗 [Huggingface](https://huggingface.co/alibaba-pai/Wan2.1-Fun-V1.1-1.3B-InP)       | Base model
-| wav2vec2-base |      🤗 [Huggingface](https://huggingface.co/facebook/wav2vec2-base-960h)          | Audio encoder
-| EchoMimicV3-preview      |      🤗 [Huggingface](https://huggingface.co/BadToBest/EchoMimicV3)              | Our weights
-| EchoMimicV3-preview      |      🤗 [ModelScope](https://modelscope.cn/models/BadToBest/EchoMimicV3)              | Our weights
+| wav2vec2-base |      🤗 [Huggingface](https://huggingface.co/facebook/wav2vec2-base-960h)          | Audio encoder for preview
+| chinese-wav2vec2-base |      🤗 [Huggingface](https://modelscope.cn/models/TencentGameMate/chinese-wav2vec2-base)          | Audio encoder for flash-pro
+| EchoMimicV3-preview      |      🤗 [Huggingface](https://huggingface.co/BadToBest/EchoMimicV3)              | preview weights
+| EchoMimicV3-preview      |      🤗 [ModelScope](https://modelscope.cn/models/BadToBest/EchoMimicV3)              | preview weights
+| EchoMimicV3-flash-pro      |      🤗 [ModelScope](https://huggingface.co/BadToBest/EchoMimicV3/tree/main/echomimicv3-flash-pro)              | flash-pro weights
 
--- The **weights** is organized as follows.
+-- The **weights** of EchoMimicV3-flash-pro is organized as follows.
 
 ```
-./models/
+./flash-pro/
+├── Wan2.1-Fun-V1.1-1.3B-InP
+├── chinese-wav2vec2-base
+└── transformer
+    └── diffusion_pytorch_model.safetensors
+
+-- The **weights** is of EchoMimicV3-preview organized as follows.
+
+```
+./preview/
 ├── Wan2.1-Fun-V1.1-1.3B-InP
 ├── wav2vec2-base-960h
 └── transformer
     └── diffusion_pytorch_model.safetensors
 ``` 
-### 🔑 Quick Inference
+### 🔑 Quick Inference for EchoMimicV3-flash-pro
+```
+bash run_flash_pro.sh
+```
+### 🔑 Quick Inference for EchoMimicV3-preview
 ```
 python infer.py
 ```
-For Quantified GradioUI version:
+For Quantified GradioUI version for EchoMimicV3-preview:
 ```
 python app_mm.py
 ```
 **images, audios, masks and prompts are provided in `datasets/echomimicv3_demos`**
 
 #### Tips
-> - Audio CFG: Audio CFG `audio_guidance_scale` works optimally between 2~3. Increase the audio CFG value for better lip synchronization, while decreasing the audio CFG value can improve the visual quality.
-> - Text CFG: Text CFG `guidance_scale` works optimally between 3~6. Increase the text CFG value for better prompt following, while decreasing the text CFG value can improve the visual quality.
-> - TeaCache: The optimal range for `teacache_threshold` is between 0~0.1.
-> - Sampling steps: 5 steps for talking head, 15~25 steps for talking body. 
-> - ​Long video generation: If you want to generate a video longer than 138 frames, you can use Long Video CFG.
-> - Try setting `partial_video_length` to 81, 65 or smaller to reduce VRAM usage.
-
-
-## 📝 TODO List
-| Status | Milestone                                                                |     
-|:--------:|:-------------------------------------------------------------------------|
-|    ✅    | The inference code of EchoMimicV3 meet everyone on GitHub   | 
-|    ✅   | EchoMimicV3-preview model on HuggingFace | 
-|    ✅   | EchoMimicV3-preview model on ModelScope | 
-|    ✅  | ModelScope Space | 
-|    🚀    | 720P Pretrained models | 
-|    🚀    | The training code of EchoMimicV3 meet everyone on GitHub   | 
+- Audio CFG: Audio CFG `audio_guidance_scale` works optimally between 2~3. Increase the audio CFG value for better lip synchronization, while decreasing the audio CFG value can improve the visual quality.
+- Text CFG: Text CFG `guidance_scale` works optimally between 3~6. Increase the text CFG value for better prompt following, while decreasing the text CFG value can improve the visual quality.
+- TeaCache: The optimal range for `teacache_threshold` is between 0~0.1.
+- Sampling steps: 5 steps for talking head, 15~25 steps for talking body. 
+- ​Long video generation: If you want to generate a video longer than 138 frames, you can use Long Video CFG.
+- Try setting `partial_video_length` to 81, 65 or smaller to reduce VRAM usage.
 
 
 ## &#x1F680; EchoMimic Series
