@@ -10,6 +10,8 @@ from PIL import Image
 from transformers import AutoTokenizer
 
 
+
+
 from src.dist import set_multi_gpus_devices, shard_model
 from src.wan_vae import AutoencoderKLWan
 from src.wan_image_encoder import  CLIPModel
@@ -33,7 +35,7 @@ import librosa
 from moviepy import VideoFileClip, AudioFileClip
 import pyloudnorm as pyln
 from transformers import Wav2Vec2FeatureExtractor
-from videox_fun.models.wav2vec2 import Wav2Vec2Model
+from src.wav2vec2 import Wav2Vec2Model
 from einops import rearrange
 
 def parse_args():
