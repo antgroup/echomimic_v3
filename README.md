@@ -128,7 +128,7 @@ pip install -r requirements.txt
 | chinese-wav2vec2-base |      🤗 [Huggingface](https://modelscope.cn/models/TencentGameMate/chinese-wav2vec2-base)          | Audio encoder for flash-pro
 | EchoMimicV3-preview      |      🤗 [Huggingface](https://huggingface.co/BadToBest/EchoMimicV3)              | preview weights
 | EchoMimicV3-preview      |      🤗 [ModelScope](https://modelscope.cn/models/BadToBest/EchoMimicV3)              | preview weights
-| EchoMimicV3-flash-pro      |      🤗 [ModelScope](https://huggingface.co/BadToBest/EchoMimicV3/tree/main/echomimicv3-flash-pro)              | flash-pro weights
+| EchoMimicV3-flash-pro      |      🤗 [Huggingface](https://huggingface.co/BadToBest/EchoMimicV3/tree/main/echomimicv3-flash-pro)              | flash-pro weights
 
 -- The **weights** of EchoMimicV3-flash-pro is organized as follows.
 
