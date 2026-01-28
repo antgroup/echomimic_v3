@@ -115,19 +115,35 @@ pip install -r requirements.txt
 | --------------|-------------------------------------------------------------------------------|-------------------------------|
 | Wan2.1-Fun-1.3B-InP  |      🤗 [Huggingface](https://huggingface.co/alibaba-pai/Wan2.1-Fun-V1.1-1.3B-InP)       | 基础模型
 | wav2vec2-base |      🤗 [Huggingface](https://huggingface.co/facebook/wav2vec2-base-960h)          | 音频编码器
-| EchoMimicV3-preview      |      🤗 [Huggingface](https://huggingface.co/BadToBest/EchoMimicV3)              | 我们的权重
-| EchoMimicV3-preview      |      🤗 [ModelScope](https://modelscope.cn/models/BadToBest/EchoMimicV3)              | 我们的权重
+| EchoMimicV3-preview      |      🤗 [Huggingface](https://huggingface.co/BadToBest/EchoMimicV3)              | preview的权重
+| EchoMimicV3-preview      |      🤗 [ModelScope](https://modelscope.cn/models/BadToBest/EchoMimicV3)              | preview的权重
+| EchoMimicV3-flash-pro      |      🤗 [Huggingface](https://huggingface.co/BadToBest/EchoMimicV3/tree/main/echomimicv3-flash-pro)              | flash-pro的权重
 
--- **权重** 文件组织如下：
-
+-- EchoMimicV3-flash-pro**权重** 文件组织如下：
 ```
-./models/
+./flash-pro/
+├── Wan2.1-Fun-V1.1-1.3B-InP
+├── chinese-wav2vec2-base
+└── transformer
+    └── diffusion_pytorch_model.safetensors
+```
+-- EchoMimicV3-preview**权重** 文件组织如下：
+```
+./preview/
 ├── Wan2.1-Fun-V1.1-1.3B-InP
 ├── wav2vec2-base-960h
 └── transformer
     └── diffusion_pytorch_model.safetensors
-``` 
-### 🔑 快速推理
+### 🔑 快速推理 EchoMimicV3-flash-pro
+```
+bash run_flash_pro.sh
+```
+### 🔑 快速推理 EchoMimicV3-preview
+```
+python infer_preview.py
+```
+```
+### 🔑 快速推理preview量化版本
 ```
 python app_mm.py
 ```
