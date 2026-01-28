@@ -51,7 +51,7 @@ Terminal Technology Department, Alipay, Ant Group.
 * [2026.01.22] 🔥 We update our EchoMimicV3-flash-pro on [Huggingface](https://huggingface.co/BadToBest/EchoMimicV3/tree/main/echomimicv3-flash-pro).
   - 🚀 8-step High-quality Generation.
   - 🧩 No Face Mask required.
-  - 💾 25G VRAM Requirement for BF16.
+  - 💾 12G VRAM Requirement.
   - ✅ Supports up to 768×768 Resolution.
 * [2025.11.09] 🔥 EchoMimicV3 is accepted by AAAI 2026.
 * [2025.08.21] 🔥 EchoMimicV3 gradio demo on [modelscope](https://modelscope.cn/studios/BadToBest/EchoMimicV3) is ready.
