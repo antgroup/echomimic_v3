@@ -134,6 +134,7 @@ pip install -r requirements.txt
 ├── wav2vec2-base-960h
 └── transformer
     └── diffusion_pytorch_model.safetensors
+```
 ### 🔑 快速推理 EchoMimicV3-flash-pro
 ```
 bash run_flash_pro.sh
@@ -142,18 +143,17 @@ bash run_flash_pro.sh
 ```
 python infer_preview.py
 ```
-```
 ### 🔑 快速推理preview量化版本
 ```
 python app_mm.py
 ```
 #### 提示
-> - 音频 CFG：音频 CFG `audio_guidance_scale` 最佳范围为 2~3。增加音频 CFG 值可以改善唇同步效果，减少音频 CFG 值可以提高视觉质量。
-> - 文本 CFG：文本 CFG `guidance_scale` 最佳范围为 3~6。增加文本 CFG 值可以更好地遵循提示词，减少文本 CFG 值可以提高视觉质量。
-> - TeaCache：`teacache_threshold` 的最佳范围为 0~0.1。
-> - 采样步数：头部动画为 5 步，全身动作为 15~25 步。
-> - ​长视频生成：如果需要生成超过 138 帧的视频，可以使用长视频 CFG。
-> - 尝试降低`partial_video_length`节省显存。
+- 音频 CFG：音频 CFG `audio_guidance_scale` 最佳范围为 2~3。增加音频 CFG 值可以改善唇同步效果，减少音频 CFG 值可以提高视觉质量。- 文本 CFG：文本 CFG `gu
+- idance_scale` 最佳范围为 3~6。增加文本 CFG 值可以更好地遵循提示词，减少文本 CFG 值可以提高视觉质量。
+- TeaCache：`teacache_threshold` 的最佳范围为 0~0.1。
+- 采样步数：头部动画为 5 步，全身动作为 15~25 步。
+- ​长视频生成：如果需要生成超过 138 帧的视频，可以使用长视频 CFG。
+- 尝试降低`partial_video_length`节省显存。
 
 
 ## 📝 待办事项
