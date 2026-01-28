@@ -38,7 +38,7 @@
 </div> -->
 
 <p align="center">
-  <img src="asset/algo_framework.jpg"  height=700>
+  <img src="asset/algo_framework.png"  height=700>
 </p>
 
 ## &#x1F4E3; 更新日志
