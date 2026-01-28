@@ -16,7 +16,7 @@
 支付宝终端技术部，蚂蚁集团
 </div>
 <p align='center'>
-    <sup>1</sup>核心贡献者&emsp;
+    <sup>1</sup>项目主导&emsp;
     <sup>2</sup>通讯作者
 </p>
 <div align='center'>
