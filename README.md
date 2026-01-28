@@ -39,7 +39,7 @@ Terminal Technology Department, Alipay, Ant Group.
 </div> -->
 
 <p align="center">
-  <img src="asset/algo_framework.jpg"  height=700>
+  <img src="asset/algo_framework.png"  height=700>
 </p>
 
 ## &#x1F680; EchoMimic Series
