@@ -155,7 +155,7 @@ bash run_flash_pro.sh
 ```
 ### 🔑 Quick Inference for EchoMimicV3-preview
 ```
-python infer.py
+python infer_preview.py
 ```
 For Quantified GradioUI version for EchoMimicV3-preview:
 ```
