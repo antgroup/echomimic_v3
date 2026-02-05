@@ -48,7 +48,7 @@ Terminal Technology Department, Alipay, Ant Group.
 * EchoMimicV3: 1.3B Parameters are All You Need for Unified Multi-Modal and Multi-Task Human Animation. [GitHub](https://github.com/antgroup/echomimic_v3)
 
 ## &#x1F4E3; Updates
-* [2026.01.22] 🔥 We update our EchoMimicV3-Flash-Pro on [Huggingface](https://huggingface.co/BadToBest/EchoMimicV3/tree/main/echomimicv3-flash-pro).
+* [2026.01.22] 🔥 We update our EchoMimicV3-Flash on [Huggingface](https://huggingface.co/BadToBest/EchoMimicV3/tree/main/echomimicv3-flash-pro).
   - 🚀 8-step High-quality Generation.
   - 🧩 No Face Mask required.
   - 💾 12G VRAM Requirement.
@@ -125,10 +125,10 @@ pip install -r requirements.txt
 | --------------|-------------------------------------------------------------------------------|-------------------------------|
 | Wan2.1-Fun-V1.1-1.3B-InP  |      🤗 [Huggingface](https://huggingface.co/alibaba-pai/Wan2.1-Fun-V1.1-1.3B-InP)       | Base model
 | wav2vec2-base |      🤗 [Huggingface](https://huggingface.co/facebook/wav2vec2-base-960h)          | Audio encoder for preview
-| chinese-wav2vec2-base |      🤗 [Huggingface](https://modelscope.cn/models/TencentGameMate/chinese-wav2vec2-base)          | Audio encoder for flash-pro
+| chinese-wav2vec2-base |      🤗 [Huggingface](https://modelscope.cn/models/TencentGameMate/chinese-wav2vec2-base)          | Audio encoder for Flash
 | EchoMimicV3-preview      |      🤗 [Huggingface](https://huggingface.co/BadToBest/EchoMimicV3)              | preview weights
 | EchoMimicV3-preview      |      🤗 [ModelScope](https://modelscope.cn/models/BadToBest/EchoMimicV3)              | preview weights
-| EchoMimicV3-flash-pro      |      🤗 [Huggingface](https://huggingface.co/BadToBest/EchoMimicV3/tree/main/echomimicv3-flash-pro)              | Flash-Pro weights
+| EchoMimicV3-Flash      |      🤗 [Huggingface](https://huggingface.co/BadToBest/EchoMimicV3/tree/main/echomimicv3-flash-pro)              | Flash weights
 
 -- The **weights** of EchoMimicV3-flash-pro is organized as follows.
 
