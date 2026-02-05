@@ -42,7 +42,7 @@
 </p>
 
 ## &#x1F4E3; 更新日志
-[2026.01.22] 🔥 我们更新了 EchoMimicV3-flash-pro 模型和代码
+[2026.01.22] 🔥 我们更新了 EchoMimicV3-Flash 模型和代码
 - 🚀 8 步即可生成高质量结果，远超 V3-preview 表现
 - 🧩 无需人脸位置掩码，流程更简洁，鲁棒性更强
 - 💾 需 **12G** 显存
@@ -115,9 +115,10 @@ pip install -r requirements.txt
 | --------------|-------------------------------------------------------------------------------|-------------------------------|
 | Wan2.1-Fun-1.3B-InP  |      🤗 [Huggingface](https://huggingface.co/alibaba-pai/Wan2.1-Fun-V1.1-1.3B-InP)       | 基础模型
 | wav2vec2-base |      🤗 [Huggingface](https://huggingface.co/facebook/wav2vec2-base-960h)          | 音频编码器
+| wav2vec2-base |      🤗 [Huggingface](https://huggingface.co/facebook/wav2vec2-base-960h)          | 音频编码器
 | EchoMimicV3-preview      |      🤗 [Huggingface](https://huggingface.co/BadToBest/EchoMimicV3)              | preview的权重
 | EchoMimicV3-preview      |      🤗 [ModelScope](https://modelscope.cn/models/BadToBest/EchoMimicV3)              | preview的权重
-| EchoMimicV3-flash-pro      |      🤗 [Huggingface](https://huggingface.co/BadToBest/EchoMimicV3/tree/main/echomimicv3-flash-pro)              | flash-pro的权重
+| EchoMimicV3-Flash      |      🤗 [Huggingface](https://huggingface.co/BadToBest/EchoMimicV3/tree/main/echomimicv3-flash-pro)              | Flash的权重
 
 -- EchoMimicV3-flash-pro**权重** 文件组织如下：
 ```
