@@ -115,7 +115,7 @@ pip install -r requirements.txt
 | --------------|-------------------------------------------------------------------------------|-------------------------------|
 | Wan2.1-Fun-1.3B-InP  |      🤗 [Huggingface](https://huggingface.co/alibaba-pai/Wan2.1-Fun-V1.1-1.3B-InP)       | 基础模型
 | wav2vec2-base |      🤗 [Huggingface](https://huggingface.co/facebook/wav2vec2-base-960h)          | 音频编码器
-| wav2vec2-base |      🤗 [Huggingface](https://huggingface.co/facebook/wav2vec2-base-960h)          | 音频编码器
+| chinese-wav2vec2-base |      🤗 [Huggingface](https://modelscope.cn/models/TencentGameMate/chinese-wav2vec2-base)          | Flash的音频编码器
 | EchoMimicV3-preview      |      🤗 [Huggingface](https://huggingface.co/BadToBest/EchoMimicV3)              | preview的权重
 | EchoMimicV3-preview      |      🤗 [ModelScope](https://modelscope.cn/models/BadToBest/EchoMimicV3)              | preview的权重
 | EchoMimicV3-Flash      |      🤗 [Huggingface](https://huggingface.co/BadToBest/EchoMimicV3/tree/main/echomimicv3-flash-pro)              | Flash的权重
