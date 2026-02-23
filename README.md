@@ -176,12 +176,17 @@ python app_mm.py
 If you find our work useful for your research, please consider citing the paper :
 
 ```
-@misc{meng2025echomimicv3,
-  title={EchoMimicV3: 1.3B Parameters are All You Need for Unified Multi-Modal and Multi-Task Human Animation},
-  author={Rang Meng, Yan Wang, Weipeng Wu, Ruobing Zheng, Yuming Li, Chenguang Ma},
-  year={2025},
-  eprint={2507.03905},
-  archivePrefix={arXiv}
+@article{meng2024echomimicv2,
+  title={EchoMimicV2: Towards Striking, Simplified, and Semi-Body Human Animation},
+  author={Meng, Rang and Zhang, Xingyu and Li, Yuming and Ma, Chenguang},
+  journal={arXiv preprint arXiv:2411.10061},
+  year={2024}
+}
+@article{meng2025echomimicv3,
+  title={Echomimicv3: 1.3 b parameters are all you need for unified multi-modal and multi-task human animation},
+  author={Meng, Rang and Wang, Yan and Wu, Weipeng and Zheng, Ruobing and Li, Yuming and Ma, Chenguang},
+  journal={arXiv preprint arXiv:2507.03905},
+  year={2025}
 }
 ```
 ## Reference
