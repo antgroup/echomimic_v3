@@ -188,6 +188,12 @@ If you find our work useful for your research, please consider citing the paper 
   journal={arXiv preprint arXiv:2507.03905},
   year={2025}
 }
+@article{meng2026echotorrent,
+  title={EchoTorrent: Towards Swift, Sustained, and Streaming Multi-Modal Video Generation},
+  author={Meng, Rang and Wu, Weipeng and Yin, Yingjie and Li, Yuming and Ma, Chenguang},
+  journal={arXiv preprint arXiv:2602.13669},
+  year={2026}
+}
 ```
 ## Reference
 - Wan2.1: https://github.com/Wan-Video/Wan2.1/
