@@ -17,7 +17,7 @@ from diffusers.utils.torch_utils import randn_tensor
 from diffusers.video_processor import VideoProcessor
 from einops import rearrange
 from PIL import Image
-from transformers import T5Tokenizer
+from transformers import T5Tokenizer, AutoTokenizer
 import torch.nn.functional as F
 
 
@@ -178,7 +178,7 @@ class WanFunInpaintAudioPipeline(DiffusionPipeline):
         tokenizer: AutoTokenizer,
         text_encoder: WanT5EncoderModel,
         vae: AutoencoderKLWan,
-        transformer: WanTransformer,
+        transformer: WanTransformerAudioMask3DModel,
         clip_image_encoder: CLIPModel,
         scheduler: FlowMatchEulerDiscreteScheduler,
     ):
