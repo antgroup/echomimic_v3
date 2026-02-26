@@ -151,7 +151,7 @@ pip install -r requirements.txt
 ``` 
 ### 🔑 Quick Inference for EchoMimicV3-flash-pro
 ```
-bash run_flash_pro.sh
+bash run_flash.sh
 ```
 ### 🔑 Quick Inference for EchoMimicV3-preview
 ```
