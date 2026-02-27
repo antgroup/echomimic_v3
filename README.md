@@ -133,7 +133,7 @@ pip install -r requirements.txt
 -- The **weights** of EchoMimicV3-flash-pro is organized as follows.
 
 ```
-./flash-pro/
+./flash/
 ├── Wan2.1-Fun-V1.1-1.3B-InP
 ├── chinese-wav2vec2-base
 └── transformer
