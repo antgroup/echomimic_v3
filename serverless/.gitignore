@@ -1,0 +1,15 @@
+# Safety net: this repo is PUBLIC. Model weights, avatar videos/voice clips (real
+# people's likenesses), and secrets must never be committed here -- they live on the
+# RunPod Network Volume, never in git. See README.md for the volume layout.
+models/
+checkpoints/
+service/
+*.pth
+*.pt
+*.bin
+*.safetensors
+*.onnx
+*.wav
+*.mp4
+*.mov
+.env
