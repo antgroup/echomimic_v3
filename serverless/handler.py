@@ -174,9 +174,6 @@ def _load_models():
     print("All models loaded. Worker ready.")
 
 
-_load_models()
-
-
 # ---------------------------------------------------------------------------
 # Stage 1: TTS  (ported from f5tts_server.py)
 # ---------------------------------------------------------------------------
@@ -624,4 +621,11 @@ def handler(event):
 
 
 if __name__ == "__main__":
+    # Model loading is gated here (not run unconditionally at module level) so that
+    # merely importing this file -- e.g. a static handler-detection check trying to
+    # introspect the module without a GPU or model volume available -- doesn't trigger
+    # a full model load and crash. Mirrors the deferred-startup pattern the original
+    # three servers used (@app.on_event("startup")), which only fired once uvicorn
+    # actually started serving, not at import time.
+    _load_models()
     runpod.serverless.start({"handler": handler})
