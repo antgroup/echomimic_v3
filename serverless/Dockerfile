@@ -12,14 +12,20 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 WORKDIR /app
 
-COPY requirements.txt .
+# NOTE: RunPod's GitHub-deploy build always uses the repo ROOT as the build
+# context, even though "Dockerfile Path" points at serverless/Dockerfile --
+# so every COPY source below is repo-root-relative (serverless/...), not
+# relative to this Dockerfile's own directory. Without the serverless/
+# prefix, these either fail outright or (worse, for requirements.txt) silently
+# match an unrelated same-named file at the repo root instead.
+COPY serverless/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Vendored MuseTalk package source (code only -- model weights live on the
 # attached Network Volume, not in the image; see README.md).
-COPY musetalk/ ./musetalk/
+COPY serverless/musetalk/ ./musetalk/
 
-COPY handler.py temporal_smooth.py ./
+COPY serverless/handler.py serverless/temporal_smooth.py ./
 
 # Where the Network Volume is mounted by RunPod Serverless workers.
 ENV MUSE_DATA_DIR=/runpod-volume
