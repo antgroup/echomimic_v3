@@ -117,7 +117,15 @@ ABOVE_CENTER_BLEED = 0.06
 MIN_INTERIOR_PIXELS = 25
 
 PAUSE_MARKER_RE = re.compile(r"\[pause\]", re.IGNORECASE)
-WORK_ROOT = tempfile.gettempdir()
+# Defaults to a scratch dir on the (huge) attached Network Volume rather than
+# tempfile.gettempdir()'s container-local disk -- a single job's frame-extraction
+# scratch space (raw + enhanced PNG sequences for a several-minute video) can run
+# into the tens of GB, easily exceeding the container's own disk allocation
+# (see the RunPod pod's identical 10GB-root-disk-full crash during development;
+# this just avoids hitting the same wall against the container's smaller disk
+# instead). Override via TMPDIR if a deployment ever wants container-local scratch.
+WORK_ROOT = os.environ.get("TMPDIR") or os.path.join(MUSE_DATA_DIR, "tmp")
+os.makedirs(WORK_ROOT, exist_ok=True)
 
 _state = {}
 

@@ -122,10 +122,18 @@ def smooth_video(input_path, output_path):
 
         subprocess.run(
             [
+                # NOTE: deliberately no -shortest here. MuseTalk's video output length
+                # (frame_count / fps) is essentially always a few tens of ms shorter
+                # than the driving TTS audio, since audio duration is rarely an exact
+                # multiple of the frame period -- -shortest previously truncated the
+                # AUDIO (not video) to match, silently clipping the last ~50-80ms of
+                # actual spoken words off every render. Keeping full-length audio and
+                # letting the last video frame hold for that final sliver instead is
+                # far less noticeable than losing real speech content.
                 "ffmpeg", "-y", "-v", "warning", "-i", tmp_video, "-i", input_path,
                 "-map", "0:v:0", "-map", "1:a:0?",
                 "-c:v", "copy",
-                "-c:a", "copy", "-shortest",
+                "-c:a", "copy",
                 output_path,
             ],
             check=True, capture_output=True, text=True,
