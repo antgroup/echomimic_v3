@@ -125,7 +125,14 @@ PAUSE_MARKER_RE = re.compile(r"\[pause\]", re.IGNORECASE)
 # this just avoids hitting the same wall against the container's smaller disk
 # instead). Override via TMPDIR if a deployment ever wants container-local scratch.
 WORK_ROOT = os.environ.get("TMPDIR") or os.path.join(MUSE_DATA_DIR, "tmp")
-os.makedirs(WORK_ROOT, exist_ok=True)
+try:
+    os.makedirs(WORK_ROOT, exist_ok=True)
+except OSError:
+    # Defensive: don't let a not-yet-mounted volume or permissions hiccup at
+    # import time take the whole worker down before it can even log anything.
+    # Falls back to container-local scratch space for this run; the disk-full
+    # risk that motivated moving off it is preferable to a hard crash loop.
+    WORK_ROOT = tempfile.gettempdir()
 
 _state = {}
 
