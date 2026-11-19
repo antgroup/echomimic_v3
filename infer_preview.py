@@ -412,12 +412,12 @@ def main():
 
         save_videos_grid(sample[:, :, :video_length], video_path, fps=config.fps)
 
-        video_clip = VideoFileClip(video_path)
-        audio_clip = audio_clip.subclipped(0, video_length / config.fps)
-        video_clip = video_clip.with_audio(audio_clip)
-        video_clip.write_videofile(video_audio_path, codec="libx264", audio_codec="aac", threads=2)
+        with audio_clip, VideoFileClip(video_path) as video_clip:
+            trimmed_audio = audio_clip.subclipped(0, video_length / config.fps)
+            video_with_audio = video_clip.with_audio(trimmed_audio)
+            video_with_audio.write_videofile(video_audio_path, codec="libx264", audio_codec="aac", threads=2)
 
-        os.system(f"rm -rf {video_path}")
+        os.remove(video_path)
 
 
 if __name__ == "__main__":
