@@ -405,10 +405,10 @@ def main():
         save_videos_grid(sample[:,:,:video_length_actual], tmp_video_path, fps=fps)
         
         # Add audio to video
-        video_clip = VideoFileClip(tmp_video_path)
-        audio_clip = audio_clip.subclipped(0, video_length_actual / fps)
-        video_clip = video_clip.with_audio(audio_clip)
-        video_clip.write_videofile(output_video_path, codec="libx264", audio_codec="aac", threads=2)
+        with audio_clip, VideoFileClip(tmp_video_path) as video_clip:
+            trimmed_audio = audio_clip.subclipped(0, video_length_actual / fps)
+            video_with_audio = video_clip.with_audio(trimmed_audio)
+            video_with_audio.write_videofile(output_video_path, codec="libx264", audio_codec="aac", threads=2)
 
         # Clean up temporary file
         os.remove(tmp_video_path)
